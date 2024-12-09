@@ -62775,6 +62775,11 @@
                  "id":229,
                  "properties":[
                         {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"tilesetCopyright",
                          "type":"string",
                          "value":"100 Roads Design LLC"
@@ -62784,6 +62789,11 @@
                  "id":230,
                  "properties":[
                         {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"tilesetCopyright",
                          "type":"string",
                          "value":"100 Roads Design LLC"
@@ -62792,6 +62802,11 @@
                 {
                  "id":231,
                  "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }, 
                         {
                          "name":"tilesetCopyright",
                          "type":"string",
