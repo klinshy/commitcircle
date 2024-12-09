@@ -68,11 +68,6 @@ This project contains multiple licenses as follows:
 * [Map license](./LICENSE.map) *(`office.tmj` and the map visual as well)*
 * [Assets license](./LICENSE.assets) *(the files inside the `src/assets/` folder)*
 
-### About third party assets
+## Copyright
+This map is the sole property of 100 Roads Design LLC. All rights are reserved by 100 Roads Design LLC. All contents of the map may not be reproduced, distributed (for sale or otherwise), or create derivative works of the copyrighted work without the express written permission of 100 Roads Design LLC.
 
-If you add third party assets in your map, do not forget to:
-
-1. Credit the author and license of a tileset with the "tilesetCopyright" property by etiding the tileset in Tiled.
-2. Add the tileset license text in *LICENSE.assets*.
-3. Credit the author and license of a map with the "mapCopyright" property in the custom properties of the map.
-4. Add the map license text in *LICENSE.map*.
