@@ -167,7 +167,7 @@ WA.onInit().then(async () => {
       firstPing = false,
 
       
-    ) {n
+    ) {
       const WEBHOOK_URL = "https://apps.taskmagic.com/api/v1/webhooks/Le9P227pmdc9BXrcgFyIx";
       /* #TODO
         Try catch when used like this isn't an anti-pattern, but could be made cleaner with promise chaining.
