@@ -97,7 +97,7 @@ WA.onInit().then(() => {
   let closedPopup: any;
   // Open the popup when we enter a given zone
   WA.room.onEnterLayer("doorstepsFocus_in").subscribe(() => {
-    if (WA.state.pw_door !== undefined && WA.state.pw_focusDoor === false && !WA.player.tags.includes("admin")) {
+    if (WA.state.pw_focusDoor === false && !WA.player.tags.includes("admin")) {
       closedPopup = WA.ui.openPopup("popupFocus", 'Zurzeit ist keine Focus Session.', [{
         label: "Sessionkalendar",
         className: "primary",
@@ -126,7 +126,7 @@ WA.onInit().then(() => {
   let closedEventsPopup: any;
   // Open the popup when we enter a given zone
   WA.room.onEnterLayer("doorstepsEvents_in").subscribe(() => {
-    if (WA.state.pw_door !== undefined && WA.state.pw_eventsDoor === false && !WA.player.tags.includes("admin")) {
+    if (WA.state.pw_eventsDoor === false && !WA.player.tags.includes("admin")) {
       closedEventsPopup = WA.ui.openPopup("popupEvents", 'Derzeit findet kein Event statt', [{
         label: "Eventkalendar",
         className: "primary",
