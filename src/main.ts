@@ -18,23 +18,23 @@ WA.onInit().then(() => {
   console.log('Scripting API ready');
   console.log('Player tags: ',WA.player.tags)
   
-  WA.room.onEnterLayer("building1-zone").subscribe(() => {
+  WA.room.area.onEnter("building1-zone").subscribe(() => {
     WA.room.hideLayer("building1-roof");
     WA.room.hideLayer("building1-walls");
     WA.room.hideLayer("building1-sign");
   });
-  WA.room.onLeaveLayer("building1-zone").subscribe(() => {
+  WA.room.area.onLeave("building1-zone").subscribe(() => {
     WA.room.showLayer("building1-roof");
     WA.room.showLayer("building1-walls");
     WA.room.showLayer("building1-sign");
   });
 
-  WA.room.onEnterLayer("building2-zone").subscribe(() => {
+  WA.room.area.onEnter("building2-zone").subscribe(() => {
     WA.room.hideLayer("building2-roof");
     WA.room.hideLayer("building2-walls");
     WA.room.hideLayer("building2-sign");
   });
-  WA.room.onLeaveLayer("building2-zone").subscribe(() => {
+  WA.room.area.onLeave("building2-zone").subscribe(() => {
     WA.room.showLayer("building2-roof");
     WA.room.showLayer("building2-walls");
     WA.room.showLayer("building2-sign");
