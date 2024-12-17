@@ -22,7 +22,7 @@ if (process.env.TILESET_OPTIMIZATION && process.env.TILESET_OPTIMIZATION === "tr
 }
 
 export default defineConfig({
-    base: "/stepFX",
+    base: "/commitcircle",
     build: {
         sourcemap: true,
         rollupOptions: {
