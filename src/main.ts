@@ -1,6 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 import { levelUp } from "@workadventure/quests";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { checkPlayerMaterial, mySound, playRandomSound } from "./footstep";
 console.log('Script started successfully');
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -14,19 +15,61 @@ WA.onInit().then(() => {
 
 console.log('Script started successfully');
 // Waiting for the API to be ready
+
+WA.onInit().then(async () => {
+  WA.player.onPlayerMove(async ({ x, y, moving }) => {
+    const material = await checkPlayerMaterial({ x, y });
+    console.log(material);
+
+    if (!material) {
+      return mySound?.stop();
+    }
+
+    if (!moving && !material) {
+      return mySound?.stop();
+    } else {
+      mySound?.stop();
+      return playRandomSound(material);
+    }
+  });
+});
+
 WA.onInit().then(() => {
   console.log('Scripting API ready');
   console.log('Player tags: ',WA.player.tags)
   
-  WA.room.area.onEnter("building1-zone").subscribe(() => {
+  WA.room.area.onEnter("building1-zone").subscribe(async () => {
     WA.room.hideLayer("building1-roof");
+    WA.room.hideLayer("Beschriftung");
     WA.room.hideLayer("building1-walls");
     WA.room.hideLayer("building1-sign");
+    const myWebsite = await WA.ui.website.open({
+      url: "https://klinshy.github.io/committimer/",
+      allowApi: true,
+      position: {
+          vertical: "bottom",
+          horizontal: "left",
+      },
+      size: {
+          height: "50vh",
+          width: "30vw",
+      },
+      margin:{
+        top: "1vh",
+        left: "1vw",
+bottom: "7vh",
+right: "1vw",
+      }
+      
+  });
+  WA.room.area.onLeave("building1-zone").subscribe(() => {myWebsite.close();});
+
   });
   WA.room.area.onLeave("building1-zone").subscribe(() => {
     WA.room.showLayer("building1-roof");
     WA.room.showLayer("building1-walls");
     WA.room.showLayer("building1-sign");
+    WA.room.showLayer("Beschriftung");
   });
 
   WA.room.area.onEnter("building2-zone").subscribe(() => {
@@ -40,12 +83,12 @@ WA.onInit().then(() => {
     WA.room.showLayer("building2-sign");
   });
 
-  WA.room.area.onEnter("building2-focus").subscribe(() => {
+  WA.room.area.onEnter("building2-zone").subscribe(() => {
     WA.room.hideLayer("facade-furniture-bg");
     WA.room.hideLayer("facade-furniture-fg");
     WA.room.hideLayer("facade");
   });
-  WA.room.area.onLeave("building2-focus").subscribe(() => {
+  WA.room.area.onLeave("building2-zone").subscribe(() => {
     WA.room.showLayer("facade-furniture-bg");
     WA.room.showLayer("facade-furniture-fg");
     WA.room.showLayer("facade");
@@ -60,7 +103,7 @@ async function updateFocusAreas() {
   for (const areaName of focusAreas) {
       const focusArea = await WA.room.area.get(areaName);
       if (focusArea) {
-          if (focusValue === "1") {
+          if (focusValue === "0") {
               focusArea.height = 375;
               focusArea.width = 765;
               console.log(`Area '${areaName}' resized to height: 375, width: 765`);
