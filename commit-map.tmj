@@ -1536,31 +1536,6 @@
                  "name":"focusArea",
                  "properties":[
                         {
-                         "name":"jitsiConfig",
-                         "type":"string",
-                         "value":"{  \n  \"toolbarButtons\": [\n    \"camera\"\n  ]\n}"
-                        }, 
-                        {
-                         "name":"jitsiInterfaceConfig",
-                         "type":"string",
-                         "value":"{\n\"DEFAULT_BACKGROUND\": \"#065c4e\"\n}"
-                        }, 
-                        {
-                         "name":"jitsiRoom",
-                         "type":"string",
-                         "value":"Fokus"
-                        }, 
-                        {
-                         "name":"jitsiRoomAdminTag",
-                         "type":"string",
-                         "value":"admin"
-                        }, 
-                        {
-                         "name":"jitsiWidth",
-                         "type":"int",
-                         "value":33
-                        }, 
-                        {
                          "name":"silent",
                          "type":"bool",
                          "value":true
@@ -1568,7 +1543,7 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":5
+                         "value":-5
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1828,6 +1803,11 @@
                          "name":"focusable",
                          "type":"bool",
                          "value":true
+                        }, 
+                        {
+                         "name":"jitsiClosable",
+                         "type":"bool",
+                         "value":false
                         }, 
                         {
                          "name":"jitsiConfig",
@@ -2220,27 +2200,46 @@
                  "y":6.82140893470813
                 }, 
                 {
-                 "height":0,
-                 "id":950,
-                 "name":"stageRestriction",
-                 "point":true,
+                 "height":375,
+                 "id":952,
+                 "name":"focusJitsi",
                  "properties":[
                         {
-                         "name":"default",
-                         "type":"bool",
-                         "value":true
+                         "name":"jitsiConfig",
+                         "type":"string",
+                         "value":"{  \n  \"toolbarButtons\": [\n    \"camera\"\n  ]\n}"
                         }, 
                         {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{\n\"DEFAULT_BACKGROUND\": \"#065c4e\"\n}"
+                        }, 
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"Fokus"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"admin"
+                        }, 
+                        {
+                         "name":"jitsiWidth",
+                         "type":"int",
+                         "value":33
+                        }, 
+                        {
+                         "name":"zoom_margin",
+                         "type":"float",
+                         "value":1
                         }],
                  "rotation":0,
-                 "type":"variable",
+                 "type":"area",
                  "visible":true,
-                 "width":0,
-                 "x":1380.19169329073,
-                 "y":898.828541001065
+                 "width":765,
+                 "x":1774.83333333333,
+                 "y":839.166666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3275,7 +3274,7 @@
          "y":0
         }],
  "nextlayerid":50,
- "nextobjectid":952,
+ "nextobjectid":953,
  "orientation":"orthogonal",
  "properties":[
         {
