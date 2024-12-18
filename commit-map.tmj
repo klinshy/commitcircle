@@ -1580,7 +1580,7 @@
                 {
                  "height":762.743275247267,
                  "id":907,
-                 "name":"building2-event",
+                 "name":"building2-focus",
                  "properties":[
                         {
                          "name":"focusable",
@@ -2212,12 +2212,35 @@
                          "type":"bool",
                          "value":true
                         }],
-                 "rotation":0,
+                 "rotation":90,
                  "type":"area",
                  "visible":true,
                  "width":2194.35295532646,
                  "x":339.249639175258,
                  "y":6.82140893470813
+                }, 
+                {
+                 "height":0,
+                 "id":950,
+                 "name":"stageRestriction",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"default",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":1380.19169329073,
+                 "y":898.828541001065
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3252,7 +3275,7 @@
          "y":0
         }],
  "nextlayerid":50,
- "nextobjectid":950,
+ "nextobjectid":952,
  "orientation":"orthogonal",
  "properties":[
         {
