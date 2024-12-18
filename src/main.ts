@@ -51,13 +51,13 @@ WA.onInit().then(() => {
           horizontal: "left",
       },
       size: {
-          height: "50vh",
-          width: "30vw",
+          height: "45vh",
+          width: "25vw",
       },
       margin:{
         top: "1vh",
         left: "1vw",
-bottom: "7vh",
+bottom: "5vh",
 right: "1vw",
       }
       
