@@ -1561,6 +1561,11 @@
                          "value":33
                         }, 
                         {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"zoom_margin",
                          "type":"float",
                          "value":5
@@ -1569,13 +1574,13 @@
                  "type":"area",
                  "visible":true,
                  "width":765,
-                 "x":1780.79560408728,
-                 "y":801.697067380262
+                 "x":1774.79560408728,
+                 "y":838.697067380262
                 }, 
                 {
                  "height":762.743275247267,
                  "id":907,
-                 "name":"building2-focus",
+                 "name":"building2-event",
                  "properties":[
                         {
                          "name":"focusable",
@@ -1586,8 +1591,8 @@
                  "type":"area",
                  "visible":true,
                  "width":1131.98734838028,
-                 "x":326.570509745804,
-                 "y":687.463001855534
+                 "x":328.133362375007,
+                 "y":740.592974568445
                 }, 
                 {
                  "height":208.12934587635,
@@ -1724,8 +1729,8 @@
                  "type":"area",
                  "visible":true,
                  "width":1158.62008898987,
-                 "x":311.333333333333,
-                 "y":671.333333333333
+                 "x":143.333333333333,
+                 "y":862.333333333333
                 }, 
                 {
                  "height":178,
@@ -1754,11 +1759,6 @@
                          "value":"marble"
                         }, 
                         {
-                         "name":"silent",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
                          "name":"stepSound",
                          "type":"bool",
                          "value":true
@@ -1767,8 +1767,8 @@
                  "type":"area",
                  "visible":true,
                  "width":765,
-                 "x":1779.11796484189,
-                 "y":824.366789888299
+                 "x":1769.11796484189,
+                 "y":836.366789888299
                 }, 
                 {
                  "height":178,
@@ -1820,7 +1820,7 @@
                  "y":1809.93730748324
                 }, 
                 {
-                 "height":521.970170267052,
+                 "height":496.409250073925,
                  "id":928,
                  "name":"eventAreaCrowd",
                  "properties":[
@@ -1859,10 +1859,10 @@
                  "visible":true,
                  "width":1128.1870503487,
                  "x":326.364035635312,
-                 "y":897.616037506379
+                 "y":923.176957699506
                 }, 
                 {
-                 "height":165.97,
+                 "height":194.97,
                  "id":937,
                  "name":"eventAreaStage",
                  "properties":[
@@ -1904,14 +1904,14 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":5
+                         "value":2
                         }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":778.19,
-                 "x":504.928051591658,
-                 "y":727.945845225027
+                 "width":894.19,
+                 "x":450.987693738775,
+                 "y":723.143800351412
                 }, 
                 {
                  "height":0,
