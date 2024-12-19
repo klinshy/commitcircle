@@ -116,14 +116,38 @@ async function updateFocusAreas() {
   }
 }
 
+async function handleProximityMeeting() {
+  const position = await WA.player.getPosition();
+  if (position.x >= 1765 && position.x <= 2540 && position.y >= 838 && position.y <= 1212) {
+    if (WA.state.focus === "1") {
+      WA.controls.disablePlayerProximityMeeting();
+    } else {
+      WA.controls.restorePlayerProximityMeeting();
+    }
+  }
+}
+
 WA.onInit().then(() => {
   updateFocusAreas();
+  handleProximityMeeting();
 });
 
 WA.state.onVariableChange('focus').subscribe(() => {
   updateFocusAreas();
+  handleProximityMeeting();
 });
 
+WA.onInit().then(async () => {
+  const position = await WA.player.getPosition();
+  if (position.x >= 1765 && position.x <= 2540 && position.y >= 838 && position.y <= 1212) {
+    WA.room.area.onEnter("focusArea").subscribe(() => {
+      WA.controls.disablePlayerProximityMeeting();
+    });
+    WA.room.area.onLeave("focusArea").subscribe(() => {
+      WA.controls.restorePlayerProximityMeeting();
+    });
+  }
+});
 
 WA.player.state.onVariableChange('pomo-exp').subscribe(async (value) => {
   console.log('Variable "pomo-exp" changed. New value: ', value);
@@ -309,3 +333,5 @@ WA.onInit().then(async () => {
 
 
 export {};
+
+

@@ -1536,9 +1536,14 @@
                  "name":"focusArea",
                  "properties":[
                         {
+                         "name":"jitsiClosable",
+                         "type":"bool",
+                         "value":false
+                        }, 
+                        {
                          "name":"jitsiConfig",
                          "type":"string",
-                         "value":"{  \n  \"toolbarButtons\": [\n    \"camera\"\n  ],\n  \"disabledSounds\": [\n    \"ASKED_TO_UNMUTE_SOUND\",\n    \"E2EE_OFF_SOUND\",\n    \"E2EE_ON_SOUND\",\n    \"INCOMING_MSG_SOUND\",\n    \"KNOCKING_PARTICIPANT_SOUND\",\n    \"LIVE_STREAMING_OFF_SOUND\",\n    \"LIVE_STREAMING_ON_SOUND\",\n    \"NO_AUDIO_SIGNAL_SOUND\",\n    \"NOISY_AUDIO_INPUT_SOUND\",\n    \"OUTGOING_CALL_EXPIRED_SOUND\",\n    \"OUTGOING_CALL_REJECTED_SOUND\",\n    \"OUTGOING_CALL_RINGING_SOUND\",\n    \"OUTGOING_CALL_START_SOUND\",\n    \"PARTICIPANT_JOINED_SOUND\",\n    \"PARTICIPANT_LEFT_SOUND\",\n    \"RAISE_HAND_SOUND\",\n    \"REACTION_SOUND\",\n    \"RECORDING_OFF_SOUND\",\n    \"_ON_SOUND\",\n    \"TALK_WHILE_MUTED_SOUND\"\n  ]\n}"
+                         "value":"{  \n  \"toolbarButtons\": [\n    \"camera\"\n  ],\n\"startWithVideoMuted\":false,\n\"startWithAudioMuted\":true,\n  \"disabledSounds\": [\n    \"ASKED_TO_UNMUTE_SOUND\",\n    \"E2EE_OFF_SOUND\",\n    \"E2EE_ON_SOUND\",\n    \"INCOMING_MSG_SOUND\",\n    \"KNOCKING_PARTICIPANT_SOUND\",\n    \"LIVE_STREAMING_OFF_SOUND\",\n    \"LIVE_STREAMING_ON_SOUND\",\n    \"NO_AUDIO_SIGNAL_SOUND\",\n    \"NOISY_AUDIO_INPUT_SOUND\",\n    \"OUTGOING_CALL_EXPIRED_SOUND\",\n    \"OUTGOING_CALL_REJECTED_SOUND\",\n    \"OUTGOING_CALL_RINGING_SOUND\",\n    \"OUTGOING_CALL_START_SOUND\",\n    \"PARTICIPANT_JOINED_SOUND\",\n    \"PARTICIPANT_LEFT_SOUND\",\n    \"RAISE_HAND_SOUND\",\n    \"REACTION_SOUND\",\n    \"RECORDING_OFF_SOUND\",\n    \"_ON_SOUND\",\n    \"TALK_WHILE_MUTED_SOUND\"\n  ]\n}"
                         }, 
                         {
                          "name":"jitsiInterfaceConfig",
@@ -1563,7 +1568,7 @@
                         {
                          "name":"silent",
                          "type":"bool",
-                         "value":true
+                         "value":false
                         }, 
                         {
                          "name":"zoom_margin",
