@@ -98,31 +98,19 @@ right: "1vw",
 //// Focus Timer related stuff added by Kilian S.
 async function updateFocusAreas() {
   const focusValue: string = WA.state.focus as string;
-  const focusAreas = ['focusArea', 'focusJitsi'];
+  const focusAreas = ['focusArea'];
 
   for (const areaName of focusAreas) {
       const focusArea = await WA.room.area.get(areaName);
       if (focusArea) {
-          if (areaName === 'focusArea') {
-              if (focusValue === "0" || focusValue === "1") {
-                  focusArea.height = 0;
-                  focusArea.width = 0;
-                  console.log(`Area '${areaName}' resized to 0`);
-              } else {
-                  focusArea.height = 375;
-                  focusArea.width = 765;
-                  console.log(`Area '${areaName}' resized to height: 375, width: 765`);
-              }
-          } else if (areaName === 'focusJitsi') {
-              if (focusValue === "0") {
-                  focusArea.height = 0;
-                  focusArea.width = 0;
-                  console.log(`Area '${areaName}' resized to 0`);
-              } else if (focusValue === "1" || focusValue === "0") {
-                  focusArea.height = 375;
-                  focusArea.width = 765;
-                  console.log(`Area '${areaName}' resized to height: 375, width: 765`);
-              }
+          if (focusValue === "1") {
+              focusArea.height = 394;
+              focusArea.width = 787;
+              console.log(`Area '${areaName}' resized to height:394 , width: 787`);
+          } else if (focusValue === "") {
+              focusArea.height = 0;
+              focusArea.width = 0;
+              console.log(`Area '${areaName}' resized to 0`);
           }
       }
   }

@@ -1531,10 +1531,35 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":375,
+                 "height":394,
                  "id":914,
                  "name":"focusArea",
                  "properties":[
+                        {
+                         "name":"jitsiConfig",
+                         "type":"string",
+                         "value":"{  \n  \"toolbarButtons\": [\n    \"camera\"\n  ],\n  \"disabledSounds\": [\n    \"ASKED_TO_UNMUTE_SOUND\",\n    \"E2EE_OFF_SOUND\",\n    \"E2EE_ON_SOUND\",\n    \"INCOMING_MSG_SOUND\",\n    \"KNOCKING_PARTICIPANT_SOUND\",\n    \"LIVE_STREAMING_OFF_SOUND\",\n    \"LIVE_STREAMING_ON_SOUND\",\n    \"NO_AUDIO_SIGNAL_SOUND\",\n    \"NOISY_AUDIO_INPUT_SOUND\",\n    \"OUTGOING_CALL_EXPIRED_SOUND\",\n    \"OUTGOING_CALL_REJECTED_SOUND\",\n    \"OUTGOING_CALL_RINGING_SOUND\",\n    \"OUTGOING_CALL_START_SOUND\",\n    \"PARTICIPANT_JOINED_SOUND\",\n    \"PARTICIPANT_LEFT_SOUND\",\n    \"RAISE_HAND_SOUND\",\n    \"REACTION_SOUND\",\n    \"RECORDING_OFF_SOUND\",\n    \"_ON_SOUND\",\n    \"TALK_WHILE_MUTED_SOUND\"\n  ]\n}"
+                        }, 
+                        {
+                         "name":"jitsiInterfaceConfig",
+                         "type":"string",
+                         "value":"{\n\"DEFAULT_BACKGROUND\": \"#065c4e\"\n}"
+                        }, 
+                        {
+                         "name":"jitsiRoom",
+                         "type":"string",
+                         "value":"Fokus"
+                        }, 
+                        {
+                         "name":"jitsiRoomAdminTag",
+                         "type":"string",
+                         "value":"admin"
+                        }, 
+                        {
+                         "name":"jitsiWidth",
+                         "type":"int",
+                         "value":33
+                        }, 
                         {
                          "name":"silent",
                          "type":"bool",
@@ -1543,14 +1568,14 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":-5
+                         "value":1
                         }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":765,
-                 "x":1774.79560408728,
-                 "y":838.697067380262
+                 "width":787,
+                 "x":1764.12893742061,
+                 "y":821.363734046929
                 }, 
                 {
                  "height":762.743275247267,
@@ -1724,11 +1749,6 @@
                  "name":"showTimer",
                  "properties":[
                         {
-                         "name":"dynamic",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
                          "name":"material",
                          "type":"string",
                          "value":"marble"
@@ -1892,34 +1912,6 @@
                  "width":894.19,
                  "x":450.987693738775,
                  "y":723.143800351412
-                }, 
-                {
-                 "height":0,
-                 "id":938,
-                 "name":"focus",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"default",
-                         "type":"string",
-                         "value":"1"
-                        }, 
-                        {
-                         "name":"dynamic",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"persist",
-                         "type":"bool",
-                         "value":true
-                        }],
-                 "rotation":0,
-                 "type":"variable",
-                 "visible":true,
-                 "width":0,
-                 "x":1936,
-                 "y":1296
                 }, 
                 {
                  "height":2029.34112121212,
@@ -2200,14 +2192,62 @@
                  "y":6.82140893470813
                 }, 
                 {
-                 "height":375,
-                 "id":952,
-                 "name":"focusJitsi",
+                 "height":0,
+                 "id":953,
+                 "name":"focus",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"allowed_values",
+                         "type":"string",
+                         "value":"{ \n\"\ud83d\ude48\ud83d\ude49\ud83d\ude4a Focus\": \"1\",\n\"\ud83c\udf4c\ud83d\udc12 un-focus\": \"\"\n\n}"
+                        }, 
+                        {
+                         "name":"default",
+                         "type":"string",
+                         "value":"1"
+                        }, 
+                        {
+                         "name":"description",
+                         "type":"string",
+                         "value":"Set Coworking area as focus area"
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"Set Focus"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"type",
+                         "type":"string",
+                         "value":"radio"
+                        }, 
+                        {
+                         "name":"writableBy",
+                         "type":"string",
+                         "value":"admin"
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":1717.33333333333,
+                 "y":796
+                }, 
+                {
+                 "height":128.666666666667,
+                 "id":954,
+                 "name":"focusArea2",
                  "properties":[
                         {
                          "name":"jitsiConfig",
                          "type":"string",
-                         "value":"{  \n  \"toolbarButtons\": [\n    \"camera\"\n  ]\n}"
+                         "value":"{\n  \"toolbarButtons\": [\n    \"camera\",\n    \"invite\"\n  ],\n  \"disabledSounds\": [\n    \"ASKED_TO_UNMUTE_SOUND\",\n    \"E2EE_OFF_SOUND\",\n    \"E2EE_ON_SOUND\",\n    \"INCOMING_MSG_SOUND\",\n    \"KNOCKING_PARTICIPANT_SOUND\",\n    \"LIVE_STREAMING_OFF_SOUND\",\n    \"LIVE_STREAMING_ON_SOUND\",\n    \"NO_AUDIO_SIGNAL_SOUND\",\n    \"NOISY_AUDIO_INPUT_SOUND\",\n    \"OUTGOING_CALL_EXPIRED_SOUND\",\n    \"OUTGOING_CALL_REJECTED_SOUND\",\n    \"OUTGOING_CALL_RINGING_SOUND\",\n    \"OUTGOING_CALL_START_SOUND\",\n    \"PARTICIPANT_JOINED_SOUND\",\n    \"PARTICIPANT_LEFT_SOUND\",\n    \"RAISE_HAND_SOUND\",\n    \"REACTION_SOUND\",\n    \"RECORDING_OFF_SOUND\",\n    \"_ON_SOUND\",\n    \"TALK_WHILE_MUTED_SOUND\"\n  ],\n  \"transcription\": {\n    \"enabled\": true,\n    \"translationLanguages\": [\"en-US\", \"es\"],\n    \"useAppLanguage\": false,\n    \"preferredLanguage\": \"en-US\",\n    \"autoTranscribeOnRecord\": true\n  }\n}"
                         }, 
                         {
                          "name":"jitsiInterfaceConfig",
@@ -2230,6 +2270,11 @@
                          "value":33
                         }, 
                         {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"zoom_margin",
                          "type":"float",
                          "value":1
@@ -2237,10 +2282,21 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":765,
-                 "x":1774.83333333333,
-                 "y":839.166666666667
+                 "width":172.333333333333,
+                 "x":2365.16666666667,
+                 "y":1271
                 }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":50,
+         "name":"configuration",
+         "objects":[],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
@@ -3273,8 +3329,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":50,
- "nextobjectid":953,
+ "nextlayerid":51,
+ "nextobjectid":955,
  "orientation":"orthogonal",
  "properties":[
         {
