@@ -1605,16 +1605,6 @@
                  "name":"fire",
                  "properties":[
                         {
-                         "name":"audioLoop",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"audioVolume",
-                         "type":"float",
-                         "value":0.2
-                        }, 
-                        {
                          "name":"focusable",
                          "type":"bool",
                          "value":true
@@ -1648,11 +1638,6 @@
                          "name":"jitsiWidth",
                          "type":"int",
                          "value":50
-                        }, 
-                        {
-                         "name":"playAudio",
-                         "type":"string",
-                         "value":".\/fire_medium_01.wav"
                         }, 
                         {
                          "name":"zoom_margin",
@@ -1716,7 +1701,7 @@
                  "y":662.666666666667
                 }, 
                 {
-                 "height":1214.6083499006,
+                 "height":1143.39752433089,
                  "id":923,
                  "name":"building2-zone",
                  "properties":[
@@ -1733,9 +1718,9 @@
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":1158.62008898987,
+                 "width":1131.16910859771,
                  "x":330.242424242424,
-                 "y":727.181818181818
+                 "y":718.000486888781
                 }, 
                 {
                  "height":178,
@@ -1904,12 +1889,12 @@
                         {
                          "name":"jitsiWidth",
                          "type":"int",
-                         "value":33
+                         "value":50
                         }, 
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":2
+                         "value":1.5
                         }],
                  "rotation":0,
                  "type":"area",
@@ -1983,7 +1968,7 @@
                  "y":2030.83551171525
                 }, 
                 {
-                 "height":1041.34,
+                 "height":1166.57068810968,
                  "id":942,
                  "name":"birds3",
                  "properties":[
@@ -2017,7 +2002,7 @@
                  "visible":true,
                  "width":331.81,
                  "x":1434.095,
-                 "y":841.33
+                 "y":716.099311890324
                 }, 
                 {
                  "height":2041.34,
@@ -2245,51 +2230,75 @@
                  "y":796
                 }, 
                 {
-                 "height":128.666666666667,
-                 "id":954,
-                 "name":"focusArea2",
+                 "height":716.512561629153,
+                 "id":955,
+                 "name":"grasatbeach1",
                  "properties":[
                         {
-                         "name":"jitsiConfig",
+                         "name":"material",
                          "type":"string",
-                         "value":"{\n  \"toolbarButtons\": [\n    \"camera\",\n    \"invite\"\n  ],\n  \"disabledSounds\": [\n    \"ASKED_TO_UNMUTE_SOUND\",\n    \"E2EE_OFF_SOUND\",\n    \"E2EE_ON_SOUND\",\n    \"INCOMING_MSG_SOUND\",\n    \"KNOCKING_PARTICIPANT_SOUND\",\n    \"LIVE_STREAMING_OFF_SOUND\",\n    \"LIVE_STREAMING_ON_SOUND\",\n    \"NO_AUDIO_SIGNAL_SOUND\",\n    \"NOISY_AUDIO_INPUT_SOUND\",\n    \"OUTGOING_CALL_EXPIRED_SOUND\",\n    \"OUTGOING_CALL_REJECTED_SOUND\",\n    \"OUTGOING_CALL_RINGING_SOUND\",\n    \"OUTGOING_CALL_START_SOUND\",\n    \"PARTICIPANT_JOINED_SOUND\",\n    \"PARTICIPANT_LEFT_SOUND\",\n    \"RAISE_HAND_SOUND\",\n    \"REACTION_SOUND\",\n    \"RECORDING_OFF_SOUND\",\n    \"_ON_SOUND\",\n    \"TALK_WHILE_MUTED_SOUND\"\n  ],\n  \"transcription\": {\n    \"enabled\": true,\n    \"translationLanguages\": [\"en-US\", \"es\"],\n    \"useAppLanguage\": false,\n    \"preferredLanguage\": \"en-US\",\n    \"autoTranscribeOnRecord\": true\n  }\n}"
+                         "value":"forest"
                         }, 
                         {
-                         "name":"jitsiInterfaceConfig",
-                         "type":"string",
-                         "value":"{\n\"DEFAULT_BACKGROUND\": \"#065c4e\"\n}"
-                        }, 
-                        {
-                         "name":"jitsiRoom",
-                         "type":"string",
-                         "value":"Fokus"
-                        }, 
-                        {
-                         "name":"jitsiRoomAdminTag",
-                         "type":"string",
-                         "value":"admin"
-                        }, 
-                        {
-                         "name":"jitsiWidth",
-                         "type":"int",
-                         "value":33
-                        }, 
-                        {
-                         "name":"silent",
+                         "name":"stepSound",
                          "type":"bool",
                          "value":true
-                        }, 
-                        {
-                         "name":"zoom_margin",
-                         "type":"float",
-                         "value":1
                         }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
-                 "width":172.333333333333,
-                 "x":2365.16666666667,
-                 "y":1271
+                 "width":337.184255091103,
+                 "x":2578.80474005027,
+                 "y":1652.75282512038
+                }, 
+                {
+                 "height":1051.45405037513,
+                 "id":956,
+                 "name":"grasatbeach2",
+                 "properties":[
+                        {
+                         "name":"material",
+                         "type":"string",
+                         "value":"forest"
+                        }, 
+                        {
+                         "name":"stepSound",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":337.184,
+                 "x":2572.5655562701,
+                 "y":306.266543944266
+                }, 
+                {
+                 "height":195.429854306165,
+                 "id":957,
+                 "name":"fireSFX",
+                 "properties":[
+                        {
+                         "name":"audioLoop",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"audioVolume",
+                         "type":"float",
+                         "value":0.2
+                        }, 
+                        {
+                         "name":"playAudio",
+                         "type":"string",
+                         "value":".\/fire_medium_01.wav"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":230.260207111522,
+                 "x":2167.82995185869,
+                 "y":2127.52173874394
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3074,7 +3083,7 @@
          "name":"building2-roof",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":100,
          "x":0,
          "y":0
@@ -3335,7 +3344,7 @@
          "y":0
         }],
  "nextlayerid":51,
- "nextobjectid":955,
+ "nextobjectid":958,
  "orientation":"orthogonal",
  "properties":[
         {

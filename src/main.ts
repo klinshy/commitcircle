@@ -57,7 +57,7 @@ WA.onInit().then(() => {
       margin:{
         top: "1vh",
         left: "1vw",
-bottom: "5vh",
+bottom: "10vh",
 right: "1vw",
       }
       
