@@ -160,63 +160,63 @@ WA.player.state.onVariableChange('pomo-exp').subscribe(async (value) => {
 });
 
 
-WA.onInit().then(() => {
-  let closedPopup: any;
+//WA.onInit().then(() => {
+ // let closedPopup: any;
   // Open the popup when we enter a given zone
-  WA.room.onEnterLayer("doorstepsFocus_in").subscribe(() => {
-    if (WA.state.pw_focusDoor === false && !WA.player.tags.includes("admin")) {
-      closedPopup = WA.ui.openPopup("popupFocus", 'Zurzeit ist keine Focus Session.', [{
-        label: "Sessionkalendar",
-        className: "primary",
-        callback: () => {
-          WA.ui.modal.openModal({
-            title: "Sessionkalendar",
-            src: 'https://www.commitcircle.so/c/community-events?iframe=true',
-            allow: "fullscreen",
-            allowApi: true,
-            position: "center"
-          });
-        }
-      }]);
-    }
-  });
+ // WA.room.onEnterLayer("doorstepsFocus_in").subscribe(() => {
+ //   if (WA.state.pw_focusDoor === false && !WA.player.tags.includes("admin")) {
+  //    closedPopup = WA.ui.openPopup("popupFocus", 'Zurzeit ist keine Focus Session.', [{
+  //      label: "Sessionkalendar",
+   //     className: "primary",
+   //     callback: () => {
+   //      WA.ui.modal.openModal({
+    //        title: "Sessionkalendar",
+    //        src: 'https://www.commitcircle.so/c/community-events?iframe=true',
+    //        allow: "fullscreen",
+    //        allowApi: true,
+    //        position: "center"
+   //       });
+    //    }
+   //   }]);
+ //   }
+//  });
 
   // Close the popup when we leave the zone.
-  WA.room.onLeaveLayer("doorstepsFocus_in").subscribe(() => {
-    if (closedPopup) {
-      closedPopup.close();
-    }
-  });
-});
+ // WA.room.onLeaveLayer("doorstepsFocus_in").subscribe(() => {
+ //   if (closedPopup) {
+ //     closedPopup.close();
+ //   }
+  //});
+//});
 
-WA.onInit().then(() => {
-  let closedEventsPopup: any;
+//WA.onInit().then(() => {
+  //let closedEventsPopup: any;
   // Open the popup when we enter a given zone
-  WA.room.onEnterLayer("doorstepsEvents_in").subscribe(() => {
-    if (WA.state.pw_eventsDoor === false && !WA.player.tags.includes("admin")) {
-      closedEventsPopup = WA.ui.openPopup("popupEvents", 'Derzeit findet kein Event statt', [{
-        label: "Eventkalendar",
-        className: "primary",
-        callback: () => {
-          WA.ui.modal.openModal({
-            title: "Eventkalendar",
-            src: 'https://www.commitcircle.so/c/live-sessions/?sort=asc',
-            allow: "fullscreen",
-            allowApi: true,
-            position: "center"
-          });
-        }
-      }]);
-    }
-  });
+  //WA.room.onEnterLayer("doorstepsEvents_in").subscribe(() => {
+  //  if (WA.state.pw_eventsDoor === false && !WA.player.tags.includes("admin")) {
+   //   closedEventsPopup = WA.ui.openPopup("popupEvents", 'Derzeit findet kein Event statt', [{
+   //     label: "Eventkalendar",
+    //    className: "primary",
+    //    callback: () => {
+     //     WA.ui.modal.openModal({
+      //      title: "Eventkalendar",
+       //     src: 'https://www.commitcircle.so/c/live-sessions/?sort=asc',
+      //      allow: "fullscreen",
+      //      allowApi: true,
+       //     position: "center"
+      //    });
+   //     }
+  //    }]);
+ //   }
+ // });
 
   // Close the popup when we leave the zone.
-  WA.room.onLeaveLayer("doorstepsEvents_in").subscribe(() => {
-    if (closedEventsPopup) {
-      closedEventsPopup.close();
-    }
-  });
-});
+ // WA.room.onLeaveLayer("doorstepsEvents_in").subscribe(() => {
+ //   if (closedEventsPopup) {
+ //     closedEventsPopup.close();
+ //   }
+////  });
+// });
 
 // Function to send player data to the webhook
 WA.onInit().then(async () => {

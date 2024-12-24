@@ -175,7 +175,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":false
+                 "value":true
                 }, 
                 {
                  "name":"closeTriggerMessage",
@@ -200,7 +200,7 @@
                 {
                  "name":"tag",
                  "type":"string",
-                 "value":"admin"
+                 "value":""
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -296,7 +296,7 @@
                 {
                  "name":"autoOpen",
                  "type":"bool",
-                 "value":false
+                 "value":true
                 }, 
                 {
                  "name":"closeTriggerMessage",
@@ -321,7 +321,7 @@
                 {
                  "name":"tag",
                  "type":"string",
-                 "value":"admin"
+                 "value":""
                 }],
          "type":"tilelayer",
          "visible":true,
