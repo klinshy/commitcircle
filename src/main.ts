@@ -149,6 +149,9 @@ WA.onInit().then(async () => {
   }
 });
 
+WA.onInit().then(() => {
+  WA.room.area.onLeave("building1-zone").subscribe(() => { WA.controls.restorePlayerProximityMeeting(); });})
+  
 WA.player.state.onVariableChange('pomo-exp').subscribe(async (value) => {
   console.log('Variable "pomo-exp" changed. New value: ', value);
   try {
